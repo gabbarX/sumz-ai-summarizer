@@ -1,17 +1,19 @@
 import React from "react";
-
-import { logo } from "../assets";
+import { AiOutlineRobot } from "react-icons/ai";
 
 const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-        <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
+        <div className='flex items-center'>
+          <span className='text-xl font-bold text-white'>sumitupformeplease </span>
+          <AiOutlineRobot className='ml-2 text-white text-2xl' />
+        </div>
 
         <button
           type='button'
           onClick={() =>
-            window.open("https://github.com/TidbitsJS/Summize", "_blank")
+            window.open("https://github.com/gabbarX/sumz-ai-summarizer", "_blank")
           }
           className='black_btn'
         >
